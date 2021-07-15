@@ -1,12 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import PageStructure from './components/pagestructure/PageStructure';
+import IntroEn from '@/pages/intro/IntroEn';
 
 function App() {
   return (
-    <div className="App">
-      <PageStructure></PageStructure>
-    </div>
+    <IntroEn></IntroEn>
   );
 }
 

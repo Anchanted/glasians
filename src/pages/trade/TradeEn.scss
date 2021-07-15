@@ -1,0 +1,15 @@
+.need {
+    display: flex;
+
+    .img-wrapper {
+        flex: 1;
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .need-text {
+        flex: 1;
+    }
+}

@@ -1,0 +1,30 @@
+.img-background {
+    width: 100%;
+    overflow: hidden;
+    height: calc(100vh - #{$header-height} - #{$footer-height});
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .carousel-wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ant-carousel {
+            width: 80%;
+        }
+    }
+
+    .logo-wrapper {
+        margin-top: 80px;
+        padding: 20px 0;
+        background-color: #014978;
+        line-height: 0;
+        text-align: center;
+
+        img {
+            width: 550px;
+        }
+    }
+}
