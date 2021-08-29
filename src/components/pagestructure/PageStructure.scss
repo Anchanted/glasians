@@ -37,6 +37,14 @@
                         padding: 0 20px;
                         font-size: 1.2rem;
                     }
+
+                    .nav-item {
+                        color: #000000;
+                    }
+
+                    .nav-item-active {
+                        color: #1890ff;
+                    }
                 }
     
                 &-lang {
@@ -65,7 +73,9 @@
     }
     
     .body {
+        overflow-y: auto;
         padding: $header-height 0 0 0;
+        min-height: calc(100vh - 60px);
     }
 
     .margin {
@@ -75,6 +85,8 @@
     
     .footer {
         height: $footer-height;
+        background-color: #014978;
+        border-top: 1px solid rgba(0, 0, 0, .2);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,7 +94,7 @@
         p {
             margin: 0;
             text-align: center;
-            color: #7e7e7e;
+            color: #bbbbbb;
         }
     }
 }

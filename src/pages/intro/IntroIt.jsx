@@ -6,12 +6,12 @@ import logo_vertical from "@/assets/images/logo_vertical.png";
 function IntroIt() {
     return (
         <PageStructure marginal>
-            <div className="container">
+            <div className="container intro-img">
                 <div className="img-wrapper">
                     <img src={logo_vertical} alt="logo_vertical" />
                 </div>
             </div>
-            <div className="container">
+            <div className="container intro-content">
                 <p><b>Glocal Asian Solutions</b> è un'azienda cinese nata nel 2020, ma diretta da Management italiano che vanta <b>oltre trent'anni</b> di esperienza nella gestione di operazioni industriali e commerciali in Cina e sui mercati esteri.</p>
                 <p>
                     <b>Glocal Asian Solutions</b> è un'azienda <b>poliedrica</b>, che può: <br />
@@ -22,7 +22,7 @@ function IntroIt() {
                 <p>Grazie alla peculiarità dei propri sistemi, l'operatività di <b>Glocal Asian Solutions'</b> è <b>flessibile</b> e <b>competitiva</b>.</p>
                 <p><b>Glocal Asian Solutions</b> ha come obiettivo quello di mettere la propria <b>esperienza</b> e la propria <b>conoscenza</b> al completo servizio dei Clienti, per migliorare il loro business, senza delusioni.</p>
             </div>
-            <div className="container">
+            <div className="container intro-other">
                 <h2>F.A.Q.</h2>
                 <div>
                     <h3>Quali sono le vostre referenze?</h3>

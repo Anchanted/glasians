@@ -1,4 +1,5 @@
 const en = {
+    title: "Glocal Asian Solutions (Suzhou) Co., Ltd.",
     nav: {
         intro: "Introduction",
         service: "Industrial Services",

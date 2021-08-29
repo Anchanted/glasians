@@ -19,7 +19,7 @@ function TradeEn() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container trade-content">
                 <p>
                     Thanks to our deep knowledge and expertise about the Chinese market, Glocal Asian Solutions is able to support you in these ambits:
                 </p>
@@ -29,7 +29,7 @@ function TradeEn() {
                     <li>Sales and/or purchases within the P.R.C.;</li>
                     <li>Scouting for customers/suppliers/products in the P.R.C.;</li>
                     <li>Market researches;</li>
-                    <li>Feasibility studies for the setting up of branch offices in the People’s Republic of China;</li>
+                    <li>Feasibility studies for the setting up of branch offices in the People's Republic of China;</li>
                     <li>Industrial and commercial consultancies;</li>
                 </ul>
                 <p>

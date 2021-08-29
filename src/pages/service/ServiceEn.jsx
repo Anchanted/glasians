@@ -3,6 +3,7 @@ import './ServiceEn.scss';
 import 'antd/dist/antd.css';
 import PageStructure from '@/components/pagestructure/PageStructure';
 import { Anchor } from 'antd';
+import service_img from "@/assets/images/service.jpg";
 
 const { Link } = Anchor;
 
@@ -22,11 +23,14 @@ function ServiceEn() {
                     </Anchor>
                 </div>
                 <div className="anchor-content">
+                    <div className="img-wrapper">
+                        <img src={service_img} alt="service_img" />
+                    </div>
                     <div id="consultancy" className="container">
                         <h2>General manufacturing consultancy</h2>
                         <div>
                             <p>
-                                <b>Glocal Asian Solutions’</b> specialists can put their expertise and knowledge at your service, to provide you with industrial, manufacturing, quality and marketing and consultancies concerning various product sectors, including:
+                                <b>Glocal Asian Solutions'</b> specialists can put their expertise and knowledge at your service, to provide you with industrial, manufacturing, quality and marketing and consultancies concerning various product sectors, including:
                             </p>
                             <ul>
                                 <li>Consumer electronics</li>
@@ -39,7 +43,6 @@ function ServiceEn() {
                                 <li>Musical Instruments</li>
                                 <li>Telecommunications</li>
                                 <li>Toys</li>
-                                <li>Fireworks</li>
                             </ul>
                         </div>
                     </div>
@@ -66,7 +69,7 @@ function ServiceEn() {
                             <h3>Social Accountability &amp; Environmental Compliance Audit (SAECA) <font color="#ff0000">*</font>:</h3>
                             <ul>
                                 <li>
-                                    Only available for legal entities within the territory of the People’s Republic of China.
+                                    Only available for legal entities within the territory of the People's Republic of China.
                                 </li>
                             </ul>
                             <p>

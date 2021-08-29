@@ -6,12 +6,12 @@ import logo_vertical from "@/assets/images/logo_vertical.png";
 function IntroEn() {
     return (
         <PageStructure marginal>
-            <div className="container">
+            <div className="container intro-img">
                 <div className="img-wrapper">
                     <img src={logo_vertical} alt="logo_vertical" />
                 </div>
             </div>
-            <div className="container">
+            <div className="container intro-content">
                 <p><b>Glocal Asian Solutions</b> is a Chinese company established in 2020, headed by Italian Management who boasts an <b>over thirty years' experience</b> in dealing with Chinese and overseas markets.</p>
                 <p>
                     <b>Glocal Asian Solutions</b> is a <b>multiform</b> enterprise, who can: <br />
@@ -22,7 +22,7 @@ function IntroEn() {
                 <p>We believe we have a distinctive and personal approach. <b>Glocal Asian Solutions'</b> operation will be <b>flexible</b> and <b>competitive</b>.</p>
                 <p><b>Glocal Asian Solutions'</b> most important aim is to put <b>experience</b> and <b>knowledge</b> to the service of its customers, enhancing their business, with no disappointment.</p>
             </div>
-            <div className="container">
+            <div className="container intro-other">
                 <h2>F.A.Q.</h2>
                 <div>
                     <h3>Which are your references?</h3>

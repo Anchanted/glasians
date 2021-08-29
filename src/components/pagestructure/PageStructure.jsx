@@ -17,7 +17,24 @@ function PageStructure(props) {
 
     useEffect(() => {
         i18n.changeLanguage(lang);
+        document.title = t('title')
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+    const sectionArr = ['intro', 'service', 'trade', 'contact'];
+    const langArr = [
+        {
+            name: 'it',
+            img: lang_it
+        },
+        {
+            name: 'zh',
+            img: lang_zh
+        },
+        {
+            name: 'en',
+            img: lang_en
+        }
+    ]
 
     return (
         <div className="page">
@@ -28,48 +45,31 @@ function PageStructure(props) {
                             <img src={logo} alt="logo" />
                         </a>
                         <ul className="header-navbar-nav">
-                            <li className="header-navbar-nav-item">
-                                <NavLink exact to={`/${lang}/intro`}>
-                                    <span>{t("nav.intro")}</span>
-                                </NavLink>
-                            </li>
-                            <li className="header-navbar-nav-item">
-                                <NavLink exact to={`/${lang}/service`}>
-                                    <span>{t("nav.service")}</span>
-                                </NavLink>
-                            </li>
-                            <li className="header-navbar-nav-item">
-                                <NavLink exact to={`/${lang}/trade`}>
-                                    <span>{t("nav.trade")}</span>
-                                </NavLink>
-                            </li>
-                            <li className="header-navbar-nav-item">
-                                <NavLink exact to={`/${lang}/contact`}>
-                                    <span>{t("nav.contact")}</span>
-                                </NavLink>
-                            </li>
+                            {
+                                sectionArr.map(name =>
+                                    <li key={name} className="header-navbar-nav-item">
+                                        <NavLink exact to={`/${lang}/${name}`}>
+                                            <span className={`nav-item ${name === navName ? 'nav-item-active' : ''}`}>{t(`nav.${name}`)}</span>
+                                        </NavLink>
+                                    </li>
+                                )
+                            }
                         </ul>
                         <ul className="header-navbar-lang">
-                            <li className="header-navbar-lang-item">
-                                <a href={`/it/${navName}`}>
-                                    <img src={lang_it} alt="lang_it" />
-                                </a>
-                            </li>
-                            <li className="header-navbar-lang-item">
-                                <a href={`/zh/${navName}`}>
-                                    <img src={lang_zh} alt="lang_zh" />
-                                </a>
-                            </li>
-                            <li className="header-navbar-lang-item">
-                                <a href={`/en/${navName}`}>
-                                    <img src={lang_en} alt="lang_en" />
-                                </a>
-                            </li>
+                            {
+                                langArr.map(e => 
+                                    <li key={e.name} className="header-navbar-lang-item">
+                                        <a href={`/${e.name}/${navName}`}>
+                                            <img src={e.img} alt={`lang_${e.name}`} />
+                                        </a>
+                                    </li>
+                                )
+                            }
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div className={`body ${props.marginal ? "margin" : null}`}>
+            <div className={`body ${props.marginal ? 'margin' : ''}`}>
                 {props.children}
             </div>
             <div className="footer">

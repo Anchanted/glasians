@@ -14,6 +14,8 @@ import TradeIt from '@/pages/trade/TradeIt';
 import ContactEn from '@/pages/contact/ContactEn';
 import ContactZh from '@/pages/contact/ContactZh';
 import ServiceEn from '@/pages/service/ServiceEn';
+import ServiceZh from '@/pages/service/ServiceZh';
+import ServiceIt from '@/pages/service/ServiceIt';
 import NotFound from '@/pages/notfound/NotFound';
 
 let lang = navigator.language || ''
@@ -42,7 +44,9 @@ const routing = (
       <Route exact path="/:lang(it)/:navName(trade)" component={TradeIt} />
       <Route exact path="/:lang(en|it)/:navName(contact)" component={ContactEn} />
       <Route exact path="/:lang(zh)/:navName(contact)" component={ContactZh} />
-      <Route exact path="/:lang(en|zh|it)/:navName(service)" component={ServiceEn} />
+      <Route exact path="/:lang(en)/:navName(service)" component={ServiceEn} />
+      <Route exact path="/:lang(zh)/:navName(service)" component={ServiceZh} />
+      <Route exact path="/:lang(it)/:navName(service)" component={ServiceIt} />
       <Route exact path="/:lang(en|zh|it)" component={Home} />
       <Route exact path="/">
         <Redirect to={`/${lang}`}/>

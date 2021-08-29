@@ -19,14 +19,14 @@ function TradeIt() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container trade-content">
                 <p>
                     Grazie alla profonda conoscenza ed esperienza sul mercato cinese, Glocal Asian Solutions può fornire il proprio supporto in questi ambiti:
                 </p>
                 <ul>
                     <li>Acquisti nella Repubblica Popolare Cinese (export);</li>
                     <li>Vendere in Cina (import);</li>
-                    <li>Acquisti e vendite all’interno della Repubblica Popolare Cinese;</li>
+                    <li>Acquisti e vendite all'interno della Repubblica Popolare Cinese;</li>
                     <li>Ricerca e selezione potenziali clienti / fornitori / prodotti nella Repubblica Popolare Cinese;</li>
                     <li>Ricerche di mercato;</li>
                     <li>Consulenze industriali e commerciali;</li>
@@ -34,7 +34,7 @@ function TradeIt() {
                     <li>Facoltà di rappresentare legalmente proprietari non cinesi di brevetti e marchi.</li>
                 </ul>
                 <p>
-                    <b>NB: In acquisto dalla Cina, tutte le nostre forniture comprendono gratuitamente l’ispezione di controllo qualità prima della spedizione.</b>
+                    <b>NB: In acquisto dalla Cina, tutte le nostre forniture comprendono gratuitamente l'ispezione di controllo qualità prima della spedizione.</b>
                 </p>
             </div>
         </PageStructure>

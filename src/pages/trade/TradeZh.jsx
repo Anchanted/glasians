@@ -19,7 +19,7 @@ function TradeZh() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container trade-content">
                 <p>
                     因我们对中国和国外市场的熟悉和专业，<b>苏州嘉雅仕信息服务有限公司</b>能在以下领域帮助您：
                 </p>

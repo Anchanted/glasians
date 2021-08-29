@@ -1,4 +1,5 @@
 const zh = {
+    title: "苏州嘉雅仕信息服务有限公司",
     nav: {
         intro: "公司介绍",
         service: "行业服务和咨询",

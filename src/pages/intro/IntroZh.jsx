@@ -6,12 +6,12 @@ import logo_vertical from "@/assets/images/logo_vertical.png";
 function IntroZh() {
     return (
         <PageStructure marginal>
-            <div className="container">
+            <div className="container intro-img">
                 <div className="img-wrapper">
                     <img src={logo_vertical} alt="logo_vertical" />
                 </div>
             </div>
-            <div className="container">
+            <div className="container intro-content">
                 <p><b>苏州嘉雅仕信息服务有限公司</b>是一个于<b>2020</b>年创建的中国企业，管理层是<b>意大利人</b>，拥有<b>超过30年</b>的对国内和海外市场的经验。</p>
                 <p>
                     <b>苏州嘉雅仕信息服务有限公司</b>是一个多平台公司，我们提供： <br />
@@ -22,7 +22,7 @@ function IntroZh() {
                 <p>我们相信我们拥有独特和点对点的交流方式。<b>苏州嘉雅仕信息服务有限公司</b>的运作灵活有效，富有竞争力。</p>
                 <p><b>苏州嘉雅仕信息服务有限公司</b>最重要的目标是将我们的经验和专业服务于客户，让客户的商业更成功，绝不会让客户失望。</p>
             </div>
-            <div className="container">
+            <div className="container intro-other">
                 <h2>常见问题 (F.A.Q.)</h2>
                 <div>
                     <h3>您有什么背景依靠吗？</h3>
